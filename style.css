@@ -1,0 +1,145 @@
+/* <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script defer src="index.js"></script>
+    <div class="container">
+        <div class="navbar">
+            <h2>Tic-Tac-Toe</h2>
+        </div>
+        <div class="game-info">
+            <div id="status">Current Player: X</div>
+        </div>
+        <div class="game">
+            <div class="game-board">
+                <div class=" board-row">
+                    <button class="square" id="0">X</button>
+                    <button class="square" id="1">O</button>
+                    <button class="square" id="2">X</button>
+                </div>
+                <div class=" board-row">
+                    <button class="square" id="3">X</button>
+                    <button class="square" id="4">O</button>
+                    <button class="square" id="5">X</button>
+                </div>
+                <div class=" board-row">
+                    <button class="square" id="6">O</button>
+                    <button class="square" id="7">X</button>
+                    <button class="square" id="8">O</button>
+                </div>
+            </div>
+        </div>
+        <div class="result">Player 1 wins</div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
+ */
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.navbar h2{
+    margin: 0;
+}
+
+.game-info{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.game{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.game-board{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* center it */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.board-row{
+    display: flex;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #999;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.square:hover{
+    background-color: #f4f4f4;
+}
+
+.result{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    display: none;
+    justify-content: center;
+
+}
+
+.reset{
+    width: 20%;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+/* Path: index.js */
